@@ -14,10 +14,12 @@ public class TwoSum {
     }
 
     public static int[] findTwoSum(int[] nums ,int target) {
+
+        // get the hash table and add the values included in the nums , while adding them we check the target will find using the O(1) property of the hashtable
         Map<Integer,Integer> map = new HashMap<>();
         for (int i=0;i<nums.length; i++){
-            int  complement = target - nums[i];
-            if(map.containsKey(complement)) return new int[] {map.get(complement), i};
+            int  complement = target - nums[i]; // find the relevent number is in the hashtable
+            if(map.containsKey(complement)) return new int[] {map.get(complement), i}; // is found we get the answer -> target = nums[i] + complement
             map.put(nums[i] , i);
         }
         return new  int[] {};
