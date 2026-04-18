@@ -5,6 +5,8 @@ import java.util.*;
 public class GroupAnagram {
 
     public static void main(String[] args) {
+
+        // these are some strings but not in the order we have to grouped them
         String[] strs = {"eat", "ten", "tan", "ate", "nat" , "bat"};
 
         List<List<String>> result = groupAnagrams(strs);
