@@ -1,3 +1,5 @@
+package p005_TopK_Frequent_elements_leetcode_no_347;
+
 import java.util.*;
 
 public class p005_TopK_Frequent_elements_leetcode_no_347 {
