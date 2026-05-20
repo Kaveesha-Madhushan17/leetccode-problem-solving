@@ -19,6 +19,7 @@ public class Solition {
         for(int i=0; i<nums.length ; i++){
             result[i] = prev;
             prev = prev * nums[i];
+            
         }
 
         for(int i = nums.length-1;i>=0;i--){
